@@ -37,7 +37,7 @@ public class Text extends SMILVisual {
 		
 	}
 	
-	public view createView(Context c) {
+	public View createView(Context c) {
 		this.t = new TextView(c);
 		this.t.setText(getResource() );
 		this.t.setPadding(this.getLeft(), this.getTop(), 0, 0);

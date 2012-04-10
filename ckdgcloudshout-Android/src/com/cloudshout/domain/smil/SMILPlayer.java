@@ -113,8 +113,7 @@ public class SMILPlayer extends Activity {
 	private void playMessage(int length, int cntr) {
 		setUpProgressBar();
 		pbar.setVisibility(View.VISIBLE);
-		/* commented out until I figure out what's wrong with the constructor
-		timer = new CountDownTimer(((long)(length - cntrl + 1) * 1000), 1000){
+		timer = new CountDownTimer(((long)(length - cntr + 1) * 1000), 1000){
 			public void onTick(long mUF) {
 				pbar.setProgress(counter);
 				beginEnd(counter);
@@ -124,12 +123,11 @@ public class SMILPlayer extends Activity {
 			public void onFinish() {
 				pbar.setProgress(counter);
 				stopMessage();
+			}
 			
 		};
 		
 		timer.start();
-		*/
-		
 	}
 	
 	private void pauseMessage() {

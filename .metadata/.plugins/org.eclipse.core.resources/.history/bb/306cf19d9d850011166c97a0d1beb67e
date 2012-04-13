@@ -1,5 +1,3 @@
-//@author Charles K Henry <charles.henry0428@sentrysecuritysolutions.com>
-
 package com.cloudshout.controller;
 
 import java.util.ArrayList;
